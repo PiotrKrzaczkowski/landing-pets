@@ -1,0 +1,46 @@
+.reviews {
+  width: 100%;
+  overflow: hidden;
+  .reviews-title {
+    padding: 0 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: $orange-font-color;
+  }
+  .reviews-container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .review {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      padding: 40px 20px;
+      box-shadow: $box-shadow;
+      border-radius: 20px;
+      background: linear-gradient(45deg, rgb(83, 83, 182), rgb(96, 96, 248));
+      background-size: 130%;
+      background-position: bottom;
+
+      .review-img {
+        width: 90px;
+        border-radius: 50%;
+      }
+      .review-name {
+        margin: 20px 0;
+        text-transform: capitalize;
+        color: $light-font-color;
+      }
+      .review-desc {
+        padding: 0 10px;
+        text-align: center;
+        font-weight: 300;
+        color: darken($light-font-color, 10%);
+      }
+    }
+  }
+}

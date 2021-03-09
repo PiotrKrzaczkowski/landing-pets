@@ -4,7 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 15px 15px;
+  transition: 0.3s ease-in-out;
+  z-index: 1000;
   .logo {
     width: 40px;
     height: 40px;
@@ -45,11 +47,12 @@
     width: 80%;
     height: 60vh;
     border-bottom-right-radius: 50px;
-    background: rgba(255, 255, 255, 1);
+    background: linear-gradient(45deg, rgb(74, 102, 177), rgb(93, 144, 255));
+
     opacity: 0;
     transform: translate(-100%, -100%);
     transition: 0.3s;
-    z-index: 99900;
+    z-index: 999;
     &.show {
       transform: translate(0, 0);
       opacity: 1;
