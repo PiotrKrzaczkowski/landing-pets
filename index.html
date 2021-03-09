@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>We Get Pet Care</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+
+    <!-- HEADER---- -->
     <header class="header">
+      <!-- NAVIGATOR---- -->
       <nav class="nav">
         <img src="./assets/Group 109.svg" alt="" class="logo">
         <div class="hamburger-menu">
@@ -21,6 +23,7 @@
           <div class="line line-2"></div>
           <div class="line line-3"></div>
         </div>
+        <!-- MOBILE LIST---- -->
         <ul class="nav-list" >
           <li class="nav-li" >
             <a href="#" class="nav-link">Location</a>
@@ -39,16 +42,53 @@
           </li>
         </ul>
       </nav>
+      <!-- HEADER MAIN SECTION -->
       <div class="title-wrapper">
         <h1 class="title">we get pet care!</h1>
         <h4 class="title-description">
           For over 17 Years, Fetch! Pet Care has been a trusted partner in
           keeping pets healthy and happy!
         </h3>
-        <button class="service-btn" >Schedule Service</button>
+        <button class="service-btn" > <a href="#">Schedule Service</a> </button>
+        <img class="title-img" src="./assets/Group 111.png" alt="">
       </div>
-
     </header>
+    <main>
+      <!-- OUR SERVICES -->
+      <section class="services">
+        <div class="fetch-section">
+          <h2 class="fetch-main-title" >our services</h2>
+          <p class="fetch-desc">National Brand With a Local Feel. Experience the Fetch! Difference</p>
+          <h3 class="fetch-title">Enter Your Location and Fetch Our Services</h3>
+          <div class="fetch-input-wrapper">
+            <input type="text" placeholder="Zip Code" class="fetch-input">
+            <button type="submit" class="fetch-submit-btn" > <i class='bx bx-right-arrow-alt'></i></button>
+          </div>
+        </div>
+          <div class="services-flex">
+            <div class="service-item">
+              <img src="./assets/dog.svg" alt="dog">
+              <p class="service-name" >dog walking</p>
+            </div>
+            <div class="service-item">
+              <img src="./assets/Group 63.svg" alt="cat">
+              <p class="service-name" >pet Sitting</p>
+            </div>
+            <div class="service-item">
+              <img src="./assets/Group 65.svg" alt="overnight care">
+              <p class="service-name" >overnight care</p>
+            </div>
+            <div class="service-item">
+              <img src="./assets/Group 64.svg" alt="">
+              <p class="service-name" >other services</p>
+            </div>
+          </div>
+        </div>
+        <img class="service-wave" src='./assets/Group 114.svg' alt="bcg-wave">
+      </section>
+
+      <section class="reviews"></section>
+    </main>
 
     <script src="./main.js"></script>
   </body>

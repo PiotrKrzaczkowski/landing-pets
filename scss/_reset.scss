@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  background-color: #f3f6fb;
 }
 img {
   display: block;
@@ -18,7 +18,32 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
+  font-family: "Poppins", sans-serif;
 }
 ul {
   list-style: none;
+}
+button {
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 36px;
+  background: #4487ff;
+  color: $light-font-color;
+  box-shadow: $box-shadow;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  display: block;
+  position: relative;
+  padding: 0 30px;
+  border: none;
+  outline: none;
+  width: 244px;
+  height: 67px;
+  border-radius: 70px;
+  box-shadow: $box-shadow;
+}
+main {
+  width: 100%;
 }
