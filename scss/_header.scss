@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  .title-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/Group\ 108.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: -300px -150px;
+  }
+}
