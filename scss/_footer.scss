@@ -7,11 +7,32 @@
   background-repeat: no-repeat;
   background-size: 320%;
   background-position: 50% 22%;
+  @media (min-width: 414px) {
+    padding-top: 130px;
+    @media (min-width: 768px) {
+      background-size: 200%;
+      padding-top: 250px;
+      @media (min-width: 1024px) {
+        background-size: 1900px;
+        background-position: 50% 10%;
+      }
+    }
+  }
   .footer-section {
     padding: 20px;
+    margin: 0 10%;
+    @media (min-width: 1024px) {
+      padding: 20px 15%;
+    }
+
     .footer-title {
       color: #ffe530;
       margin-bottom: 15px;
+      &:nth-child(1) {
+        @media (min-width: 414px) {
+          padding-top: -10px;
+        }
+      }
     }
     .footer-link {
       font-size: 14px;
@@ -20,15 +41,21 @@
     }
     .footer-flex-list {
       display: flex;
+      width: 100%;
       justify-content: space-between;
       & .footer-list {
         width: 45%;
+        @media (min-width: 768px) {
+        }
       }
     }
     .footer-input-wrapper {
       width: 100%;
       height: 67px;
       position: relative;
+      @media (min-width: 768px) {
+        margin: 40px 0 10px;
+      }
       .footer-input {
         margin-top: 15px;
         width: 100%;

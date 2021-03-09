@@ -1,18 +1,30 @@
 .reviews {
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
+  @media (min-width: 768px) {
+    margin-top: -300px;
+    @media (min-width: 1024px) {
+      margin-top: -450px;
+    }
+  }
   .reviews-title {
     padding: 0 15px;
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
     color: $orange-font-color;
+    @media (min-width: 1024px) {
+      padding: 0 25%;
+    }
   }
   .reviews-container {
     min-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .review {
+      height: 400px;
       width: 80%;
       display: flex;
       flex-direction: column;
@@ -25,7 +37,15 @@
       background: linear-gradient(45deg, rgb(83, 83, 182), rgb(96, 96, 248));
       background-size: 130%;
       background-position: bottom;
-
+      &:nth-child(2) {
+        left: 100%;
+      }
+      &:nth-child(3) {
+        left: 200%;
+      }
+      &:nth-child(4) {
+        left: 300%;
+      }
       .review-img {
         width: 90px;
         border-radius: 50%;
@@ -41,6 +61,17 @@
         font-weight: 300;
         color: darken($light-font-color, 10%);
       }
+    }
+  }
+  .nav-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slider-btn {
+      padding: 10px 20px;
+      margin: 0 20px;
+      box-shadow: $box-shadow;
     }
   }
 }
