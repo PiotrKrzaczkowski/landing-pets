@@ -213,6 +213,13 @@
       .explanation-img {
         width: 37px;
         height: 37px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          filter: hue-rotate(80deg);
+          -webkit-filter: hue-rotate(80deg);
+          // box-shadow: $box-shadow;
+        }
         @media (min-width: 768px) {
           width: 60px;
           height: 60px;
@@ -352,6 +359,7 @@
         margin: 20px;
         width: 51px;
         height: 51px;
+
         @media (min-width: 414px) {
           margin: 30px;
           @media (min-width: 1368px) {
