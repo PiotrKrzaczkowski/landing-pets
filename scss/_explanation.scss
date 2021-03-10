@@ -2,14 +2,38 @@
   width: 100%;
   min-height: 100vh;
   margin-top: 100px;
-  overflow: hidden;
+  padding-top: 150px;
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    background-color: rgb(240, 224, 0);
+    width: 900px;
+    height: 1000px;
+    border-radius: 50%;
+    z-index: -1;
+    @media (min-width: 1024px) {
+      top: 10%;
+      @media (min-width: 1100px) {
+        top: 0%;
+        left: 70%;
+        background-color: rgb(240, 224, 0);
+        width: 750px;
+        height: 750px;
+      }
+    }
+  }
   @media (min-width: 375px) {
     margin-top: 70px;
     @media (min-width: 1100px) {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      @media (min-width: 1100px) {
+        margin-top: 0px;
+      }
     }
   }
   .fetch-section {
@@ -131,15 +155,18 @@
       border-top-right-radius: 110px;
       border: 10px solid $orange-font-color;
       border-left: 0;
+
       @media (min-width: 768px) {
         width: 680px;
         height: 350px;
         @media (min-width: 1024px) {
           width: 880px;
           @media (min-width: 1100px) {
-            width: 550px;
+            width: 280px;
             height: 250px;
+            left: 25%;
             border-width: 5px;
+            border-bottom: 3px;
           }
         }
       }
@@ -200,42 +227,89 @@
     background: linear-gradient(45deg, rgb(74, 102, 177), rgb(93, 144, 255));
     border-radius: 20px;
     box-shadow: $box-shadow;
+    position: relative;
+    &::before {
+      display: none;
+      @media (min-width: 1100px) {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -30%;
+        background-color: rgb(240, 224, 0);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+    @media (min-width: 1100px) {
+      height: 380px;
+      margin-top: 180px;
+      padding-left: 50px 20px;
+      flex-direction: row;
+    }
+
     .join-img {
       height: 243px;
       @media (min-width: 1024px) {
         height: 350px;
       }
     }
-    .join-title {
-      margin: 30px 0 15px;
-      font-size: 1.7rem;
-      color: #ffe530;
-      @media (min-width: 1024px) {
-        font-size: 2.2rem;
+    .join-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      @media (min-width: 1100px) {
+        justify-content: space-around;
+        height: 250px;
+        width: 60%;
+        margin-left: 30px;
       }
-    }
-    .join-desc {
-      padding-right: 25px;
-      font-size: 14px;
-      font-weight: 300;
-      color: $light-font-color;
-      @media (min-width: 1024px) {
-        padding: 0 15%;
-        text-align: center;
+
+      .join-title {
+        margin: 30px auto 15px;
+        font-size: 1.8rem;
+        color: #ffe530;
+        @media (min-width: 1024px) {
+          font-size: 2.2rem;
+          @media (min-width: 1100px) {
+            font-size: 1.8rem;
+            margin: 0;
+          }
+        }
       }
-    }
-    .join-btn {
-      height: 55px;
-      width: 140px;
-      margin: 40px 0 20px;
-      align-self: flex-start;
-      color: $orange-font-color;
-      font-size: 1rem;
-      font-weight: 700;
-      background: #fff;
-      box-shadow: $box-shadow;
-      @media (min-width: 768px) {
-        margin: 50px auto 10px;
+      .join-desc {
+        padding-right: 25px;
+        font-size: 14px;
+        font-weight: 300;
+        color: $light-font-color;
+        @media (min-width: 1024px) {
+          padding: 0 15%;
+          text-align: center;
+          @media (min-width: 1100px) {
+            text-align: start;
+            padding: 0;
+          }
+        }
+      }
+      .join-btn {
+        height: 55px;
+        width: 140px;
+        margin: 40px 0 20px;
+        align-self: flex-start;
+        color: $orange-font-color;
+        font-size: 1rem;
+        font-weight: 700;
+        background: #fff;
+        box-shadow: $box-shadow;
+        @media (min-width: 768px) {
+          margin: 50px auto 10px;
+          @media (min-width: 1100px) {
+            margin: 0;
+          }
+        }
       }
     }
   }

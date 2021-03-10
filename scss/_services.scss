@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 130vh;
   margin-top: 240px;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   @media (min-width: 375px) {
     margin: 200px 0 0;
@@ -17,6 +17,9 @@
           justify-content: space-around;
           align-items: center;
           margin: -600px 0;
+          @media (min-width: 1360px) {
+            margin: -900px 0;
+          }
         }
       }
     }
@@ -61,7 +64,7 @@
           @media (min-width: 1100px) {
             margin-top: 20px;
             font-size: 1rem;
-            width: 700px;
+            width: 650px;
           }
         }
       }
@@ -151,7 +154,7 @@
       & img {
         width: 45px;
         @media (min-width: 1024px) {
-          width: 65px;
+          width: 45px;
         }
       }
       .service-name {
@@ -161,7 +164,7 @@
         text-transform: capitalize;
         color: $dark-font-color;
         @media (min-width: 1024px) {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
     }
@@ -188,6 +191,12 @@
               left: -28%;
               top: 20%;
               transform: rotate(-5deg);
+              @media (min-width: 1360px) {
+                width: 2900px;
+                top: 18%;
+                left: -25%;
+                transform: rotate(2deg);
+              }
             }
           }
         }
