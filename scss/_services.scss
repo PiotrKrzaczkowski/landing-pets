@@ -147,6 +147,10 @@
           @media (min-width: 1100px) {
             width: 170px;
             height: 170px;
+            @media (min-width: 1100px) {
+              width: 210px;
+              height: 210px;
+            }
           }
         }
       }
@@ -193,9 +197,9 @@
               transform: rotate(-5deg);
               @media (min-width: 1360px) {
                 width: 2900px;
-                top: 18%;
+                top: 22%;
                 left: -25%;
-                transform: rotate(2deg);
+                transform: rotate(1deg);
               }
             }
           }

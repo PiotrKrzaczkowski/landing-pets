@@ -156,6 +156,7 @@ main {
 
 @media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1360px) {
   .header .title-wrapper .title {
+    margin-top: 180px;
     font-size: 3.5rem;
   }
 }
@@ -726,6 +727,13 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1100px) {
+  .services .services-flex .service-item {
+    width: 210px;
+    height: 210px;
+  }
+}
+
 .services .services-flex .service-item img {
   width: 45px;
 }
@@ -798,10 +806,10 @@ main {
 @media (min-width: 375px) and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1360px) {
   .services .service-wave {
     width: 2900px;
-    top: 18%;
+    top: 22%;
     left: -25%;
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
 }
 
@@ -999,6 +1007,15 @@ main {
     background-color: #f0e000;
     width: 750px;
     height: 750px;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1100px) and (min-width: 1024px) {
+  .explanation::before {
+    width: 1000px;
+    height: 1000px;
+    top: -15%;
+    left: 80%;
   }
 }
 
@@ -1208,6 +1225,12 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 768px) and (min-width: 1100px) and (min-width: 1368px) {
+  .explanation .explanation-flex {
+    width: 40%;
+  }
+}
+
 .explanation .explanation-flex::before {
   content: "";
   width: 330px;
@@ -1290,6 +1313,12 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .explanation .explanation-flex .explanation-item {
+    padding: 80px;
+  }
+}
+
 .explanation .explanation-flex .explanation-item:nth-child(2) {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1336,7 +1365,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 20px;
-  background: linear-gradient(45deg, #4a66b1, #5d90ff);
+  background: linear-gradient(45deg, #2c6fff, #375cc4);
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 6px #2c1dad29;
           box-shadow: 0 3px 6px #2c1dad29;
@@ -1535,6 +1564,12 @@ main {
 @media (min-width: 414px) {
   .explanation .brands .brands-wrapper .brand-img {
     margin: 30px;
+  }
+}
+
+@media (min-width: 414px) and (min-width: 1368px) {
+  .explanation .brands .brands-wrapper .brand-img {
+    margin: 20px 100px;
   }
 }
 
