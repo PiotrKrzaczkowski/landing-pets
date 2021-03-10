@@ -15,8 +15,10 @@
       background-position: -300px -150px;
       @media (min-width: 1024px) {
         background-size: 2300px;
-        background-position: -300px -150px;
+
         @media (min-width: 1100px) {
+          background-size: 1900px;
+          background-position: -300px -420px;
         }
       }
     }
@@ -45,6 +47,9 @@
         @media (min-width: 1024px) {
           font-size: 3.2rem;
           margin-top: 120px;
+          @media (min-width: 1100px) {
+            margin-top: 75px;
+          }
         }
       }
     }
@@ -59,6 +64,10 @@
         padding-right: 170px;
         @media (min-width: 1024px) {
           font-size: 1.5rem;
+          @media (min-width: 1100px) {
+            font-size: 1rem;
+            width: 700px;
+          }
         }
       }
     }
@@ -77,6 +86,12 @@
           width: 280px;
           border-radius: 90px;
           font-size: 1.2rem;
+          @media (min-width: 1100px) {
+            width: 160px;
+            height: 50px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+          }
         }
       }
     }
@@ -100,6 +115,11 @@
               height: 800px;
               bottom: -25%;
               right: -25%;
+              @media (min-width: 1100px) {
+                height: 525px;
+                right: -5%;
+                bottom: -30%;
+              }
             }
           }
         }

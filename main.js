@@ -3,21 +3,28 @@ const menuIcon = document.querySelector(".hamburger-menu ");
 const navList = document.querySelector(".nav-list");
 const nav = document.querySelector(".nav");
 const lines = document.querySelectorAll(".line");
+const desktopLinks = document.querySelectorAll(".nav-link-d");
 
 menuIcon.addEventListener("click", () => {
   navList.classList.toggle("show");
   lines.forEach((line) => line.classList.toggle("change"));
 });
 
-// CHANGE BACKGROUND-COLOR MOBILE MENU
+// CHANGE BACKGROUND-COLOR MOBILE MENU, DESKTOP MENU, COLOR-FONTS
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 10) {
     document.querySelector(".nav").style.backgroundColor =
       "rgba(255, 255, 255,.8)";
+    document.querySelector(".nav-desktop").style.backgroundColor =
+      "rgba(255, 255, 255,.8)";
     lines.forEach((line) => (line.style.backgroundColor = "#333"));
+    desktopLinks.forEach((link) => (link.style.color = "#333"));
   } else {
     lines.forEach((line) => (line.style.backgroundColor = "#DDD"));
     document.querySelector(".nav").style.backgroundColor = "transparent";
+    document.querySelector(".nav-desktop").style.backgroundColor =
+      "transparent";
+    desktopLinks.forEach((link) => (link.style.color = "#fff"));
   }
 });
 

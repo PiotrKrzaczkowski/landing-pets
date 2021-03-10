@@ -87,7 +87,13 @@ main {
 @media (min-width: 375px) and (min-width: 768px) and (min-width: 1024px) {
   .header {
     background-size: 2300px;
-    background-position: -300px -150px;
+  }
+}
+
+@media (min-width: 375px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .header {
+    background-size: 1900px;
+    background-position: -300px -420px;
   }
 }
 
@@ -134,6 +140,12 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .header .title-wrapper .title {
+    margin-top: 75px;
+  }
+}
+
 .header .title-wrapper .title-description {
   padding: 0 0 11px;
   font-size: 0.85rem;
@@ -152,6 +164,13 @@ main {
 @media (min-width: 768px) and (min-width: 1024px) {
   .header .title-wrapper .title-description {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .header .title-wrapper .title-description {
+    font-size: 1rem;
+    width: 700px;
   }
 }
 
@@ -177,6 +196,15 @@ main {
     width: 280px;
     border-radius: 90px;
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .header .title-wrapper .service-btn {
+    width: 160px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 0.8rem;
   }
 }
 
@@ -218,6 +246,14 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .header .title-wrapper .title-img {
+    height: 525px;
+    right: -5%;
+    bottom: -30%;
+  }
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -234,6 +270,12 @@ main {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 1000;
+}
+
+@media (min-width: 1100px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav .logo {
@@ -257,6 +299,12 @@ main {
   position: relative;
   z-index: 1001;
   cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+  .nav .hamburger-menu {
+    display: none;
+  }
 }
 
 .nav .hamburger-menu .line {
@@ -315,6 +363,12 @@ main {
   z-index: 999;
 }
 
+@media (min-width: 1100px) {
+  .nav .nav-list {
+    display: none;
+  }
+}
+
 .nav .nav-list.show {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -331,6 +385,53 @@ main {
   letter-spacing: 1px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .nav-desktop {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+    z-index: 999;
+  }
+  .nav-desktop .nav-list {
+    width: 38%;
+    height: 65px;
+    margin-right: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav-desktop .logo {
+    margin-left: 80px;
+  }
+  .nav-desktop .nav-link-d {
+    font-weight: 300;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .services {
@@ -359,6 +460,22 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 414px) and (min-width: 768px) and (min-width: 1100px) {
+  .services {
+    min-height: 260vh;
+    margin-left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -600px 0;
+  }
+}
+
 .services .fetch-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +489,14 @@ main {
 @media (min-width: 768px) {
   .services .fetch-section {
     margin-left: 80px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1100px) {
+  .services .fetch-section {
+    margin-left: 150px;
+    width: 550px;
+    margin-right: -50px;
   }
 }
 
@@ -391,6 +516,12 @@ main {
 @media (min-width: 768px) and (min-width: 1024px) {
   .services .fetch-section .fetch-main-title {
     font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .services .fetch-section .fetch-main-title {
+    font-size: 2rem;
   }
 }
 
@@ -414,6 +545,14 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .services .fetch-section .fetch-desc {
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 700px;
+  }
+}
+
 .services .fetch-section .fetch-title {
   margin-top: 29px;
   padding: 0 88px 0 24px;
@@ -429,6 +568,12 @@ main {
   }
 }
 
+@media (min-width: 1024px) and (min-width: 1100px) {
+  .services .fetch-section .fetch-title {
+    font-size: 1.2rem;
+  }
+}
+
 .services .fetch-section .fetch-input-wrapper {
   width: 250px;
   margin: 20px 0 0 16px;
@@ -438,6 +583,12 @@ main {
 .services .fetch-section .fetch-input-wrapper .fetch-input {
   background-color: #fff;
   width: 100%;
+}
+
+@media (min-width: 1100px) {
+  .services .fetch-section .fetch-input-wrapper .fetch-input {
+    height: 60px;
+  }
 }
 
 .services .fetch-section .fetch-input-wrapper .fetch-input::-webkit-input-placeholder {
@@ -494,6 +645,13 @@ main {
   z-index: 0;
 }
 
+@media (min-width: 1100px) {
+  .services .services-flex {
+    width: 40%;
+    padding-top: 50px;
+  }
+}
+
 .services .services-flex .service-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +685,13 @@ main {
 @media (min-width: 768px) and (min-width: 1024px) {
   .services .services-flex .service-item {
     height: 180px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .services .services-flex .service-item {
+    width: 170px;
+    height: 170px;
   }
 }
 
@@ -589,6 +754,16 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .services .service-wave {
+    width: 2200px;
+    left: -28%;
+    top: 20%;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
 .reviews {
   width: 100%;
 }
@@ -605,6 +780,12 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .reviews {
+    margin-top: 350px;
+  }
+}
+
 .reviews .reviews-title {
   padding: 0 15px;
   font-size: 1.8rem;
@@ -616,6 +797,12 @@ main {
 @media (min-width: 1024px) {
   .reviews .reviews-title {
     padding: 0 25%;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1100px) {
+  .reviews .reviews-title {
+    padding: 0 33%;
   }
 }
 
@@ -660,6 +847,14 @@ main {
   background: linear-gradient(45deg, #5353b6, #6060f8);
   background-size: 130%;
   background-position: bottom;
+  position: relative;
+}
+
+@media (min-width: 1100px) {
+  .reviews .reviews-container .review {
+    width: 430px;
+    height: 250px;
+  }
 }
 
 .reviews .reviews-container .review:nth-child(2) {
@@ -685,11 +880,23 @@ main {
   color: #fff;
 }
 
+@media (min-width: 1100px) {
+  .reviews .reviews-container .review .review-name {
+    margin: 10px 0 15px;
+  }
+}
+
 .reviews .reviews-container .review .review-desc {
   padding: 0 10px;
   text-align: center;
   font-weight: 300;
   color: #e6e6e6;
+}
+
+@media (min-width: 1100px) {
+  .reviews .reviews-container .review .review-desc {
+    font-size: 0.7rem;
+  }
 }
 
 .reviews .nav-buttons {
@@ -726,6 +933,19 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 1100px) {
+  .explanation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .explanation .fetch-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,6 +960,13 @@ main {
   .explanation .fetch-section {
     padding: 20px 0 50px 0;
     margin-left: 80px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1100px) {
+  .explanation .fetch-section {
+    width: 40%;
+    margin-left: -70px;
   }
 }
 
@@ -763,6 +990,12 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .explanation .fetch-section .fetch-main-title {
+    font-size: 2rem;
+  }
+}
+
 .explanation .fetch-section .fetch-desc {
   margin-top: 5px;
   padding: 0 106px 0 24px;
@@ -781,6 +1014,13 @@ main {
 @media (min-width: 768px) and (min-width: 1024px) {
   .explanation .fetch-section .fetch-desc {
     padding-left: 60px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .explanation .fetch-section .fetch-desc {
+    font-size: 0.8rem;
+    padding-right: 165px;
   }
 }
 
@@ -878,6 +1118,15 @@ main {
   }
 }
 
+@media (min-width: 375px) and (min-width: 768px) and (min-width: 1100px) {
+  .explanation .explanation-flex {
+    width: 50%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 .explanation .explanation-flex::before {
   content: "";
   width: 330px;
@@ -906,6 +1155,14 @@ main {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .explanation .explanation-flex::before {
+    width: 550px;
+    height: 250px;
+    border-width: 5px;
+  }
+}
+
 .explanation .explanation-flex .explanation-item {
   width: 118px;
   height: 118px;
@@ -926,6 +1183,7 @@ main {
   background-color: #fff;
   -webkit-box-shadow: 0 3px 6px #2c1dad29;
           box-shadow: 0 3px 6px #2c1dad29;
+  color: #808080;
 }
 
 @media (min-width: 768px) {
@@ -939,6 +1197,13 @@ main {
   .explanation .explanation-flex .explanation-item {
     margin: 0 180px;
     padding: 100px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .explanation .explanation-flex .explanation-item {
+    padding: 70px;
+    margin: 0 150px;
   }
 }
 
@@ -963,6 +1228,14 @@ main {
   .explanation .explanation-flex .explanation-item .explanation-img {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+  .explanation .explanation-flex .explanation-item .explanation-img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
   }
 }
 

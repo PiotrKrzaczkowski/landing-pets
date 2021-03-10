@@ -6,6 +6,11 @@
   position: relative;
   @media (min-width: 375px) {
     margin-top: 70px;
+    @media (min-width: 1100px) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
   .fetch-section {
     display: flex;
@@ -13,6 +18,10 @@
     @media (min-width: 768px) {
       padding: 20px 0 50px 0;
       margin-left: 80px;
+      @media (min-width: 1100px) {
+        width: 40%;
+        margin-left: -70px;
+      }
     }
 
     .fetch-main-title {
@@ -25,6 +34,9 @@
         @media (min-width: 1024px) {
           font-size: 3.2rem;
           padding-left: 60px;
+          @media (min-width: 1100px) {
+            font-size: 2rem;
+          }
         }
       }
     }
@@ -39,6 +51,10 @@
         padding-right: 350px;
         @media (min-width: 1024px) {
           padding-left: 60px;
+          @media (min-width: 1100px) {
+            font-size: 0.8rem;
+            padding-right: 165px;
+          }
         }
       }
     }
@@ -96,6 +112,10 @@
       padding-top: 60px;
       @media (min-width: 768px) {
         padding: 0;
+        @media (min-width: 1100px) {
+          width: 50%;
+          order: -1;
+        }
       }
     }
     &::before {
@@ -116,6 +136,11 @@
         height: 350px;
         @media (min-width: 1024px) {
           width: 880px;
+          @media (min-width: 1100px) {
+            width: 550px;
+            height: 250px;
+            border-width: 5px;
+          }
         }
       }
     }
@@ -130,12 +155,17 @@
       border-radius: 20px;
       background-color: #fff;
       box-shadow: $box-shadow;
+      color: $dark-font-color;
       @media (min-width: 768px) {
         margin: 0 100px;
         padding: 85px;
         @media (min-width: 1024px) {
           margin: 0 180px;
           padding: 100px;
+          @media (min-width: 1100px) {
+            padding: 70px;
+            margin: 0 150px;
+          }
         }
       }
       &:nth-child(2) {
@@ -150,6 +180,11 @@
           @media (min-width: 1024px) {
             width: 80px;
             height: 80px;
+            @media (min-width: 1100px) {
+              width: 40px;
+              height: 40px;
+              margin-top: 20px;
+            }
           }
         }
       }
